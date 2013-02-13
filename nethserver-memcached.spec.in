@@ -3,7 +3,7 @@ Name: nethserver-memcached
 Version: @@VERSION@@
 Release: @@RELEASE@@
 License: GPL
-URL: http://dev.nethesis.it/projects/nethserver
+URL: %{url_prefix}/%{name} 
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
