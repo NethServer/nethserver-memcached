@@ -28,12 +28,5 @@ use esmith::Build::CreateLinks qw(:all);
 #
 event_actions('nethserver-memcached-update', qw(
       initialize-default-databases 00
-      runlevel-adjust              40
 ));
 
-#
-# uninstall event
-#
-event_actions('nethserver-memcached-uninstall', qw(
-      nethserver-memcached-uninstall 20
-));
