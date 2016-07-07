@@ -1,6 +1,6 @@
 Summary: NethServer memcached configuration
 Name: nethserver-memcached
-Version: 1.0.2
+Version: 1.1.0
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -32,6 +32,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
+- First NS7 release
+
 * Wed Feb 05 2014 Davide Principi <davide.principi@nethesis.it> - 1.0.2-1.ns6
 - Lib: synchronize service status prop and chkconfig - Feature #2067 [NethServer]
 
