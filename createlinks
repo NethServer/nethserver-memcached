@@ -23,10 +23,18 @@
 use strict;
 use esmith::Build::CreateLinks qw(:all);
 
+my $event = 'nethserver-memcached-update';
+
 #
 # update event
 #
-event_actions('nethserver-memcached-update', qw(
+event_actions( $event , qw(
       initialize-default-databases 00
 ));
 
+#Template to expand
+templates2events("/etc/sysconfig/memcached", $event);
+
+#service to trigger
+event_services( $event , qw(
+      memcached restart));
