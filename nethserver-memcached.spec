@@ -1,6 +1,6 @@
 Summary: NethServer memcached configuration
 Name: nethserver-memcached
-Version: 1.1.0
+Version: 1.2.0
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -32,6 +32,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Apr 08 2021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.0-1
+- Memcached: Listen only to localhost - NethServer/dev#6473
+
 * Thu Jul 07 2016 Stefano Fancello <stefano.fancello@nethesis.it> - 1.1.0-1
 - First NS7 release
 
